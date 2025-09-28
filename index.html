@@ -1,63 +1,113 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NESTS EMRS 2025 में B.Ed. को अनिवार्य कराने हेतु, अपने अधिकार के लिए ईमेल भेजें!</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTS EMRS 2025 में B.Ed. को अनिवार्य कराने हेतु, अपने अधिकार के लिए ईमेल भेजें!</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons for UI elements -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Simple animation for elements appearing */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="bg-gray-50 text-gray-800">
 
-    <div class="w-full max-w-2xl mx-auto p-6 md:p-8 bg-white rounded-xl shadow-lg text-center">
-        
-                <div class="mb-6">
-            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">NCTE को ईमेल भेजने हेतु निर्देश</h1>
-            <p class="text-gray-600 mt-2">
-                नीचे दिए गए बटन पर क्लिक करें। यह आपके डिफ़ॉल्ट ईमेल ऐप को एक पूर्व-लिखित संदेश के साथ खोलेगा।
-            </p>
-        </div>
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <div class="w-full max-w-3xl mx-auto bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+            <div class="p-8 md:p-12">
 
-                <div class="mt-8">
-            <button id="sendEmailBtn" class="w-full md:w-auto inline-block px-10 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-transform transform hover:scale-105">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                ईमेल भेजें
-            </button>
-        </div>
+                <!-- Header Section -->
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="mail" class="w-8 h-8"></i>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900">अपने अधिकार के लिए ईमेल भेजें!</h1>
+                    <p class="text-gray-600 mt-3 max-w-xl mx-auto">
+                        NESTS EMRS 2025 में B.Ed. को अनिवार्य कराने हेतु, कृपया नीचे दिए गए चरणों का पालन करें।
+                    </p>
+                    <p class="text-blue-700 font-semibold mt-4 max-w-xl mx-auto">
+                        जितने अधिक ईमेल होंगे, उतना ही हमारी बात सुने जाने की संभावना ज़्यादा होगी।
+                    </p>
+                </div>
 
-                <div class="mt-8 text-sm text-gray-500">
-            <p>आपको बस "Send" पर क्लिक करना है। कोई बदलाव करने की आवश्यकता नहीं है।</p>
-            <p class="mt-4">For further info please join telegram channel : <a href="https://t.me/CSbedstudent" target="_blank" class="text-blue-600 hover:underline">t.me/CSbedstudent</a></p>
-        </div>
+                <!-- Steps Section -->
+                <div class="mt-10 space-y-8">
+                    <!-- Step 1: Download File -->
+                    <div class="flex items-start space-x-4 fade-in" style="animation-delay: 0.2s;">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800">PDF फ़ाइल डाउनलोड करें</h2>
+                            <p class="text-gray-600 mt-1">ईमेल के साथ संलग्न करने के लिए आवश्यक दस्तावेज़ डाउनलोड करें।</p>
+                            <a href="EMRS_BED.pdf" download="EMRS_BED.pdf" class="mt-4 inline-flex items-center justify-center px-6 py-3 bg-gray-800 text-white font-semibold text-base rounded-lg shadow-md hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 transition-transform transform hover:scale-105">
+                                <i data-feather="download" class="w-5 h-5 mr-2"></i>
+                                PDF डाउनलोड करें
+                            </a>
+                        </div>
+                    </div>
 
-    </div>
+                    <!-- Step 2: Send Email -->
+                    <div class="flex items-start space-x-4 fade-in" style="animation-delay: 0.4s;">
+                         <div class="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800">ईमेल भेजें और फ़ाइल संलग्न करें</h2>
+                            <p class="text-gray-600 mt-1">नीचे दिए गए बटन पर क्लिक करें। यह आपके ईमेल ऐप को एक पूर्व-लिखित संदेश के साथ खोलेगा। <strong class="text-red-600">कृपया डाउनलोड की गई PDF फ़ाइल को संलग्न करना न भूलें।</strong></p>
+                             <button id="sendEmailBtn" class="mt-4 inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-transform transform hover:scale-105">
+                                <i data-feather="send" class="w-6 h-6 mr-3"></i>
+                                ईमेल भेजें
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Footer -->
+            <div class="bg-gray-50 px-8 py-4 text-center border-t border-gray-200">
+                <p class="text-sm text-gray-500">
+                    For further info, please join our Telegram channel: 
+                    <a href="https://t.me/CSbedstudent" target="_blank" class="font-medium text-blue-600 hover:underline">t.me/CSbedstudent</a>
+                </p>
+            </div>
+        </div>
+       
+    </div>
 
-    <script>
-        // --- Configuration ---
-        const recipients = [
-            'commissioner.nests@tribal.gov.in',
-            'nests-tribal@tribal.gov.in',
-            'kumud.kushwaha@nests.tribal.gov.in',
-            'admin.hq@nests.tribal.gov.in',
-            'legal.hq@nests.tribal.gov.in',
-            'gauravpawer.fci@gov.in',
-            'v.kpatil@tribal.gov.in'
-        ];
+    <script>
+        // --- Feather Icons Initialization ---
+        feather.replace();
+
+        // --- Email Configuration ---
+        const recipients = [
+            'commissioner.nests@tribal.gov.in',
+            'nests-tribal@tribal.gov.in',
+            'kumud.kushwaha@nests.tribal.gov.in',
+            'admin.hq@nests.tribal.gov.in',
+            'legal.hq@nests.tribal.gov.in',
+            'gauravpawer.fci@gov.in',
+            'v.kpatil@tribal.gov.in'
+        ];
         const bccRecipient = 'hemantcompiler+nests-emrs@gmail.com';
+        const subject = "NESTS ESSE-2025 EMRS, TGT PGT Computer Science Legal Issues";
 
-        const subject = "NESTS ESSE-2025 EMRS, TGT PGT Computer Science Legal Issues";
-
-        // Using template literal for easy-to-read multiline string.
-        const body = `सेवा में,
+        // Using template literal for an easy-to-read multiline string.
+        const body = `सेवा में,
 अध्यक्ष/सचिव, NCTE
 
 महोदय,
@@ -80,23 +130,24 @@ Quality Education के लिए B.Ed. Teachers Training किए हुए T
 क्योंकि NESTS द्वारा भारत की संसद द्वारा पारित अधिनियम (NCTE Act) के के विपरीत कार्य किया जा रहा है।
 
 कृपया संलग्न दस्तावेज में उल्लिखित बिन्दुओं का संज्ञान लेने का कष्ट करें।`;
-        
-        // --- Logic ---
-        document.getElementById('sendEmailBtn').addEventListener('click', function() {
-            // Join all recipients with a comma
-            const to = recipients.join(',');
+        
+        // --- Logic ---
+        document.getElementById('sendEmailBtn').addEventListener('click', function() {
+            // Join all recipients with a comma
+            const to = recipients.join(',');
 
-            // encodeURIComponent is crucial for handling special characters, newlines, and non-English text correctly.
-            const encodedSubject = encodeURIComponent(subject);
-            const encodedBody = encodeURIComponent(body);
+            // encodeURIComponent is crucial for handling special characters, newlines, and non-English text correctly.
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
             const encodedBcc = encodeURIComponent(bccRecipient);
 
-            // Construct the final mailto link
-            const mailtoLink = `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}&bcc=${encodedBcc}`;
+            // Construct the final mailto link with all parameters
+            const mailtoLink = `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}&bcc=${encodedBcc}`;
 
-            // Open the user's default email client
-            window.location.href = mailtoLink;
-        });
-    </script>
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
+
