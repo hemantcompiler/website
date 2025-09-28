@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>Redirecting to Email...</title>
-
-    <meta http-equiv="refresh" content="0; url=mailto:support@example.com?subject=Inquiry%20from%20Website&body=Hello,%0A%0AI%20would%20like%20to%20ask%20a%20question.%0A%0AThanks.">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCTE को ईमेल भेजें</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-    <p>Your email client should open automatically.</p>
-    <p>If you are not redirected, <a href="mailto:support@example.com?subject=Inquiry%20from%20Website&body=Hello,%0A%0AI%20would%20like%20to%20ask%20a%20question.%0A%0AThanks.">please click here to send an email</a>.</p>
+    <div class="w-full max-w-2xl mx-auto p-6 md:p-8 bg-white rounded-xl shadow-lg text-center">
+        
+        <!-- Header Section -->
+        <div class="mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">NCTE को ईमेल भेजने हेतु निर्देश</h1>
+            <p class="text-gray-600 mt-2">
+                नीचे दिए गए बटन पर क्लिक करें। यह आपके डिफ़ॉल्ट ईमेल ऐप को एक पूर्व-लिखित संदेश के साथ खोलेगा।
+            </p>
+        </div>
 
+        <!-- Action Button -->
+        <div class="mt-8">
+            <button id="sendEmailBtn" class="w-full md:w-auto inline-block px-10 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-transform transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                ईमेल भेजें
+            </button>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-8 text-sm text-gray-500">
+            <p>आपको बस "Send" पर क्लिक करना है। कोई बदलाव करने की आवश्यकता नहीं है।</p>
+        </div>
+
+    </div>
+
+    <script>
+        // --- Configuration ---
+        const recipients = [
+            'commissioner.nests@tribal.gov.in',
+            'nests-tribal@tribal.gov.in',
+            'kumud.kushwaha@nests.tribal.gov.in',
+            'admin.hq@nests.tribal.gov.in',
+            'legal.hq@nests.tribal.gov.in',
+            'gauravpawer.fci@gov.in',
+            'v.kpatil@tribal.gov.in'
+        ];
+
+        const subject = "NESTS PGT/TGT Computer Science भर्ती में B.Ed. की अनिवार्यता के संबंध में।";
+
+        // Using template literal for easy-to-read multiline string.
+        const body = `सेवा में,
+अध्यक्ष/सचिव, NCTE
+
+महोदय,
+National Education Society for Tribal Students (NESTS) के द्वारा PGT Computer Science और TGT Computer Science के लिए B.Ed. अनिवार्य नहीं करके Untrained Teachers की भर्ती की जा रही है, NCTE Act, 2009 (यथासंशोधित) की धारा 12क - विद्यालय शिक्षकों की शिक्षा के न्यूनतम स्तर अवधारित करने की परिषद् की शक्ति, धारा 32(2)(घ) - धारा 12 के खंड (घ) के अधीन अध्यापक के रूप में नियोजित किए जाने वाले व्यक्ति के लिए न्यूनतम योग्यताएं सम्बन्धी प्रावधानों का स्पष्ट उल्लंघन किया जा रहा है साथ ही साथ NCTE द्वारा दिनांक - 12.11.2014 को अधिसूचित न्यूनतम शैक्षिक योग्यता में विनियम संख्या 4(क) का भी स्पष्ट उल्लंघन किया जा रहा है।
+
+केवल NESTS द्वारा ही NCTE अधिनियम की धाराओं एवं NCT विनियमों का पालन नहीं किया जा रहा है।
+
+जबकि KVS, NVS, AEES, Sainik School Society, ISRO सभी के द्वारा NCTE अधिनियम की धाराओं एवं NCTE विनियमों का पालन किया जा रहा है।
+
+कृपया NCTE अधिनियम, 2009 (यथासंशोधित) की धारा 12क, धारा 32(2)(घ), NCTE द्वारा दिनांक - 12.11.2014 को अधिसूचित न्यूनतम शैक्षिक योग्यता में विनियम संख्या 4(क) तथा KVS, NVS, AEES, Sainik School Society, ISRO सभी के Recruitment Rules के आधार पर NESTS को EMRS स्कूलों में PGT Computer Science और TGT Computer Science शिक्षकों के लिए B.Ed. अनिवार्य करने हेतु सक्षम प्राधिकारी से अनुमोदन प्राप्त करके ESSE 2025 में B.Ed. को अनिवार्य करने हेतु निर्देशित करने का कष्ट करें।
+
+क्योंकि NESTS, NCTE अधिनियम की धाराओं के विपरीत कार्य नहीं कर सकता है।
+
+NESTS द्वारा EMRS स्कूलों में PGT Computer Science और TGT Computer Science शिक्षकों के लिए बिना B.Ed. के Untrained Teachers की भर्ती की जा रही है जो कि NCTE Minimum Qualification Regulations, 2014 के विपरीत है, जबकि NEP 2020 भी Trained Teachers और Quality Education पर फोकस करती है।
+
+Quality Education के लिए B.Ed. Teachers Training किए हुए Trained शिक्षक ही भर्ती के लिए उपयुक्त हैं न कि Untrained शिक्षक।
+
+चूंकि अध्यापकों की न्यूनतम शैक्षिक योग्यताओं को निर्धारित एवं लागू कराने हेतु भारत की संसद द्वारा NCTE को अधिकृत किया गया है अतः NCTE का यह दायित्व बनता है कि NCTE द्वारा दिनांक - 12.11.2014 को अधिसूचित न्यूनतम शैक्षिक योग्यता में विनियम संख्या 4(क) के आधार पर इस तथ्यात्मक एवं तार्किक विषय का संज्ञान लेकर सक्षम स्तर से NESTS को PGT Computer Science और TGT Computer Science शिक्षकों की भर्ती हेतु विनियमानुसार (As Per NCTE Minimum Qualification Regulations, 2014 Dated – 12.11.2014) B.Ed. को अनिवार्य कराने का कष्ट करें।
+
+क्योंकि NESTS द्वारा भारत की संसद द्वारा पारित अधिनियम (NCTE Act) के के विपरीत कार्य किया जा रहा है।
+
+कृपया संलग्न दस्तावेज में उल्लिखित बिन्दुओं का संज्ञान लेने का कष्ट करें।`;
+        
+        // --- Logic ---
+        document.getElementById('sendEmailBtn').addEventListener('click', function() {
+            // Join all recipients with a comma
+            const to = recipients.join(',');
+
+            // encodeURIComponent is crucial for handling special characters, newlines, and non-English text correctly.
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
+
+            // Construct the final mailto link
+            const mailtoLink = `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}`;
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
